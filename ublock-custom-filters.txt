@@ -1,0 +1,82 @@
+! uBlock
+! -------------------------------
+
+! general
+##.ez_banner.ez_twentytwentytwo_corners
+##.ez-twentytwentytwo.ez-main-cmp-wrapper.pre-render-cmp.ez_banner
+##[id="ez-cookie-dialog-wrapper"]
+
+! youtube.com - 'more videos' at pause disable
+##.ytp-pause-overlay
+
+! youtube.com
+www.youtube.com###logo
+www.youtube.com###voice-search-button
+www.youtube.com#$#ytd-searchbox.ytd-masthead { display: flex !important; margin: 0 !important; }
+www.youtube.com#$##end.ytd-masthead { min-width: 25px !important; }
+www.youtube.com##ytd-topbar-menu-button-renderer.style-scope.ytd-masthead.style-default
+
+! google.com - 'peoples also search' disable
+google.com##div[id^="ed_"]
+google.com##div[id^="eob_"]
+
+! sjp.pwn.pl - remove top bar
+sjp.pwn.pl##.visible-lg.visible-md.no-padding-xs.col-xs-12
+sjp.pwn.pl##.banner
+sjp.pwn.pl##.slowniki
+sjp.pwn.pl##.section
+sjp.pwn.pl###ribbon
+
+! digitalocean.com
+www.digitalocean.com##.reveal.newsletter-signups-dialog
+
+! techtarget.com
+www.techtarget.com##[id="pillar-ribbon"]
+www.techtarget.com##[id="rail-share-bar"]
+
+! speedtest.net
+www.speedtest.net##.notification
+
+! realpython.com
+realpython.com##.show.fade.modal
+realpython.com##.show.fade.modal-backdrop
+
+! soft360.pl
+soft360.pl###trusted-left
+
+!facebook.com##div[role=article]:has(.userContentWrapper .userContent a[href^="/hashtag/XYZ?"]):style(opacity:0.5)
+
+! nopremium.pl
+www.nopremium.pl##.trustpilot-widget
+!www.nopremium.pl##div[class^="info_notice"]
+
+! stackoverflow.com,stackexchange.com,serverfault.com,superuser.com,askubuntu.com
+stackoverflow.com,stackexchange.com,serverfault.com,superuser.com,askubuntu.com##.js-dismissable-hero
+! remove header
+stackoverflow.com,stackexchange.com,serverfault.com,superuser.com,askubuntu.com##.site-header
+! remove cookie notification
+stackoverflow.com,stackexchange.com,serverfault.com,superuser.com,askubuntu.com##.js-consent-banner
+! remove collaborate notification
+stackoverflow.com,stackexchange.com,serverfault.com,superuser.com,askubuntu.com##.ps-relative.js-freemium-cta
+! block right sidemenu
+stackoverflow.com,stackexchange.com,serverfault.com,superuser.com,askubuntu.com##[id="left-sidebar"]
+! block left sidemenu
+stackoverflow.com,stackexchange.com,serverfault.com,superuser.com,askubuntu.com##[id="sidebar"]
+stackoverflow.com,stackexchange.com,serverfault.com,superuser.com,askubuntu.com#$##mainbar,.mainbar{ width: 100% !important; }
+stackoverflow.com,stackexchange.com,serverfault.com,superuser.com,askubuntu.com#$#body{ background-image: unset !important; }
+!stackoverflow.com,stackexchange.com,serverfault.com,superuser.com,askubuntu.com#$#body{ background-size: 0px !important; }
+
+! lubimyczytac.pl
+! remove top ads bar
+lubimyczytac.pl###js-AdsTopCollContainer:remove()
+! topbar position fix
+lubimyczytac.pl#$#.d-block.ads__TopCollContainer~.header { top: 0px !important; }
+lubimyczytac.pl#$#.header { top: 0px !important; }
+! remove socials
+lubimyczytac.pl##.header__primary > .social-square--header.social-square
+! remove plebiscyt
+lubimyczytac.pl##.lcaward-link-tracker-cta
+!lubimyczytac.pl##.advertisement--top_1.advertisement.ads-container
+!lubimyczytac.pl##.footer__fixed__wrapper
+!lubimyczytac.pl##.lcaward-modal-category__wrapper
+!lubimyczytac.pl##.show.fade.lcaward-category-backdrop
