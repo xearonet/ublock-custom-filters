@@ -20,6 +20,10 @@ www.youtube.com##ytd-topbar-menu-button-renderer.style-scope.ytd-masthead.style-
 google.com##div[id^="ed_"]
 google.com##div[id^="eob_"]
 
+! google.com - 'log as ...' disable
+! ###credential_picker_container
+||accounts.google.com/gsi/iframe/$subdocument
+
 ! sjp.pwn.pl - remove top bar
 sjp.pwn.pl##.visible-lg.visible-md.no-padding-xs.col-xs-12
 sjp.pwn.pl##.banner
