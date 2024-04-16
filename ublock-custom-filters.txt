@@ -84,3 +84,7 @@ lubimyczytac.pl##.lcaward-link-tracker-cta
 !lubimyczytac.pl##.footer__fixed__wrapper
 !lubimyczytac.pl##.lcaward-modal-category__wrapper
 !lubimyczytac.pl##.show.fade.lcaward-category-backdrop
+
+! 2024-03-05 https://jbzd.com.pl
+jbzd.com.pl##div.jad-rectangle:nth-of-type(2)
+
