@@ -1,4 +1,4 @@
-! uBlock
+! [uBlock Origin]
 ! -------------------------------
 
 ! general
@@ -6,53 +6,31 @@
 ##.ez-twentytwentytwo.ez-main-cmp-wrapper.pre-render-cmp.ez_banner
 ##[id="ez-cookie-dialog-wrapper"]
 
+! blokowanie chatów
+##div[data-testid="widgetPopupFrame"]
+##iframe#widgetPopupFrame
+##div[data-testid="widgetMessengerFrame"]
+##iframe#widgetMessengerFrame
+
 ! youtube.com - 'more videos' at pause disable
 ##.ytp-pause-overlay
 
 ! youtube.com
-www.youtube.com###logo
-www.youtube.com###voice-search-button
-www.youtube.com#$#ytd-searchbox.ytd-masthead { display: flex !important; margin: 0 !important; }
-www.youtube.com#$##end.ytd-masthead { min-width: 25px !important; }
-www.youtube.com##ytd-topbar-menu-button-renderer.style-scope.ytd-masthead.style-default
-
-! google.com - 'peoples also search' disable
-google.com##div[id^="ed_"]
-google.com##div[id^="eob_"]
+youtube.com###logo
+youtube.com###voice-search-button
+youtube.com#$#ytd-searchbox.ytd-masthead { display: flex !important; margin: 0 !important; }
+youtube.com#$##end.ytd-masthead { min-width: 25px !important; }
+youtube.com##ytd-topbar-menu-button-renderer.style-scope.ytd-masthead.style-default
+! transcription
+!youtube.com##ytd-engagement-panel-section-list-renderer.ytd-watch-flexy.style-scope > .ytd-engagement-panel-section-list-renderer.style-scope
 
 ! google.com - 'log as ...' disable
 ! ###credential_picker_container
 ||accounts.google.com/gsi/iframe/$subdocument
 
-! sjp.pwn.pl - remove top bar
-sjp.pwn.pl##.visible-lg.visible-md.no-padding-xs.col-xs-12
-sjp.pwn.pl##.banner
-sjp.pwn.pl##.slowniki
-sjp.pwn.pl##.section
-sjp.pwn.pl###ribbon
-
-! digitalocean.com
-www.digitalocean.com##.reveal.newsletter-signups-dialog
-
-! techtarget.com
-www.techtarget.com##[id="pillar-ribbon"]
-www.techtarget.com##[id="rail-share-bar"]
-
-! speedtest.net
-www.speedtest.net##.notification
-
-! realpython.com
-realpython.com##.show.fade.modal
-realpython.com##.show.fade.modal-backdrop
-
-! soft360.pl
-soft360.pl###trusted-left
-
-!facebook.com##div[role=article]:has(.userContentWrapper .userContent a[href^="/hashtag/XYZ?"]):style(opacity:0.5)
-
-! nopremium.pl
-www.nopremium.pl##.trustpilot-widget
-!www.nopremium.pl##div[class^="info_notice"]
+! google.com - 'peoples also search' disable
+google.com##div[id^="ed_"]
+google.com##div[id^="eob_"]
 
 ! stackoverflow.com,stackexchange.com,serverfault.com,superuser.com,askubuntu.com
 stackoverflow.com,stackexchange.com,serverfault.com,superuser.com,askubuntu.com##.js-dismissable-hero
@@ -70,6 +48,18 @@ stackoverflow.com,stackexchange.com,serverfault.com,superuser.com,askubuntu.com#
 stackoverflow.com,stackexchange.com,serverfault.com,superuser.com,askubuntu.com#$#body{ background-image: unset !important; }
 !stackoverflow.com,stackexchange.com,serverfault.com,superuser.com,askubuntu.com#$#body{ background-size: 0px !important; }
 
+! sjp.pwn.pl - remove top bar
+sjp.pwn.pl##.visible-lg.visible-md.no-padding-xs.col-xs-12
+sjp.pwn.pl##.banner
+sjp.pwn.pl##.slowniki
+sjp.pwn.pl##.section
+sjp.pwn.pl###ribbon
+
+! doz.pl
+doz.pl##.show.kodabots-promo-4gHwe12-arrow.kodabots-promo-4gHwe12-triangle-bottom.kodabots-promo-4gHwe12
+doz.pl##.cookie-step_one.simplebar-content
+doz.pl##.js-popup-cookies.popup-cookies.popup
+
 ! lubimyczytac.pl
 ! remove top ads bar
 lubimyczytac.pl###js-AdsTopCollContainer:remove()
@@ -80,11 +70,52 @@ lubimyczytac.pl#$#.header { top: 0px !important; }
 lubimyczytac.pl##.header__primary > .social-square--header.social-square
 ! remove plebiscyt
 lubimyczytac.pl##.lcaward-link-tracker-cta
-!lubimyczytac.pl##.advertisement--top_1.advertisement.ads-container
-!lubimyczytac.pl##.footer__fixed__wrapper
-!lubimyczytac.pl##.lcaward-modal-category__wrapper
-!lubimyczytac.pl##.show.fade.lcaward-category-backdrop
 
-! 2024-03-05 https://jbzd.com.pl
-jbzd.com.pl##div.jad-rectangle:nth-of-type(2)
+! jbzd.com.pl
+jbzd.com.pl##.sidebar-halfpage
+jbzd.com.pl##.jad-rectangle
 
+! soft360.pl
+soft360.pl###trusted-left
+
+! techtarget.com
+techtarget.com##[id="pillar-ribbon"]
+techtarget.com##[id="rail-share-bar"]
+
+! digitalocean.com
+digitalocean.com##.reveal.newsletter-signups-dialog
+
+! speedtest.net
+speedtest.net##.notification
+
+! realpython.com
+realpython.com##.show.fade.modal
+realpython.com##.show.fade.modal-backdrop
+
+! nopremium.pl
+nopremium.pl##.trustpilot-widget
+!nopremium.pl##div[class^="info_notice"]
+
+! gry-online - blokowanie playera
+gry-online.pl##div#dailymotion-pip-large-viewport
+gry-online.pl##div#dm-player-vad
+gry-online.pl##.dailymotion-player-wrapper
+gry-online.pl##iframe.dailymotion-player
+
+! steam
+store.steampowered.com##.broadcast_embed_top_ctn_trgt
+
+! scrapmechanic.fandom.com
+scrapmechanic.fandom.com##.marketing-notifications
+
+! gildia.pl
+gildia.pl##.opineo-side-slider-widget__label--right.opineo-side-slider-widget__label
+
+! lab.xenet.org - disable update notification
+portainer.lab.xenet.org##button:has-text("Upgrade to Business Edition")
+192.168.11.120##button:has-text("Upgrade to Business Edition")
+192.168.11.150##button:has-text("Upgrade to Business Edition")
+
+! chatgpt.com
+chatgpt.com##.-z-1.bottom-full.end-0.start-0.absolute
+chatgpt.com##.md\:px-\[60px\].\[view-transition-name\:var\(--vt-disclaimer\)\].text-xs.text-center.p-2.justify-center.items-center.w-full.min-h-8.flex.relative.text-token-text-secondary.-mt-4 > .pointer-events-auto
