@@ -96,6 +96,12 @@ realpython.com##.show.fade.modal-backdrop
 nopremium.pl##.trustpilot-widget
 !nopremium.pl##div[class^="info_notice"]
 
+! chomikuj.pl
+chomikuj.pl##.recommend_panel
+chomikuj.pl##.publishmentRightAd
+chomikuj.pl##.pp_download_frame.pp_frame
+chomikuj.pl##.pp_frame
+
 ! gry-online - blokowanie playera
 gry-online.pl##div#dailymotion-pip-large-viewport
 gry-online.pl##div#dm-player-vad
@@ -115,6 +121,8 @@ gildia.pl##.opineo-side-slider-widget__label--right.opineo-side-slider-widget__l
 portainer.lab.xenet.org##button:has-text("Upgrade to Business Edition")
 192.168.11.120##button:has-text("Upgrade to Business Edition")
 192.168.11.150##button:has-text("Upgrade to Business Edition")
+
+portainer.lab.xenet.org##.widget:has-text(Latest News From Portainer)
 
 ! chatgpt.com
 chatgpt.com##.-z-1.bottom-full.end-0.start-0.absolute
