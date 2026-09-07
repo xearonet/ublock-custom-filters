@@ -118,11 +118,9 @@ scrapmechanic.fandom.com##.marketing-notifications
 gildia.pl##.opineo-side-slider-widget__label--right.opineo-side-slider-widget__label
 
 ! lab.xenet.org - disable update notification
-portainer.lab.xenet.org##button:has-text("Upgrade to Business Edition")
-192.168.11.120##button:has-text("Upgrade to Business Edition")
-192.168.11.150##button:has-text("Upgrade to Business Edition")
-
-portainer.lab.xenet.org##.widget:has-text(Latest News From Portainer)
+!portainer.lab.xenet.org##.widget:has-text(Latest News From Portainer)
+portainer.lab.xenet.org##section.widget:has(.motd-body)
+portainer.lab.xenet.org###sideview > sidebar > div > button
 
 ! chatgpt.com
 chatgpt.com##.-z-1.bottom-full.end-0.start-0.absolute
