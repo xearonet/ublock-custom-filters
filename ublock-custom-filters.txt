@@ -117,6 +117,9 @@ scrapmechanic.fandom.com##.marketing-notifications
 ! gildia.pl
 gildia.pl##.opineo-side-slider-widget__label--right.opineo-side-slider-widget__label
 
+! filmweb.pl
+www.filmweb.pl##.faInterstitialDesktop
+
 ! lab.xenet.org - disable update notification
 !portainer.lab.xenet.org##.widget:has-text(Latest News From Portainer)
 portainer.lab.xenet.org##section.widget:has(.motd-body)
