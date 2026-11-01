@@ -125,3 +125,4 @@ portainer.lab.xenet.org###sideview > sidebar > div > button
 ! chatgpt.com
 chatgpt.com##.-z-1.bottom-full.end-0.start-0.absolute
 chatgpt.com##.md\:px-\[60px\].\[view-transition-name\:var\(--vt-disclaimer\)\].text-xs.text-center.p-2.justify-center.items-center.w-full.min-h-8.flex.relative.text-token-text-secondary.-mt-4 > .pointer-events-auto
+chatgpt.com##.dark.scope-QdG_CW
